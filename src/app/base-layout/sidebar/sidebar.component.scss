@@ -1,0 +1,36 @@
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-heading, .aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link,
+.menu-item .menu-submenu .menu-item.menu-item-active > .menu-link{
+    background-color: transparent;
+}
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text {
+    font-weight: 600;
+}
+.menu-subnav{
+    position: relative;
+}
+.menu-subnav::before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #EBEDF3;
+    position: absolute;
+    left: 15%;
+    top: 0;
+}
+.aside-menu .menu-nav > .menu-item .menu-submenu .menu-item > .menu-link .menu-bullet.menu-bullet-line > span {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.aside-menu .menu-nav > .menu-item .menu-submenu .menu-item > .menu-link .menu-bullet.menu-bullet-line > span {
+    background-color: #B5B5C3;
+}
+.aside-menu .menu-nav > .menu-item.menu-item-active .menu-submenu .menu-item > .menu-link .menu-bullet.menu-bullet-line > span{
+    background-color: #1BC5BD;
+}
+.aside-menu .menu-nav > .menu-item > .menu-submenu .menu-subnav > .menu-item > .menu-link{
+    padding-left: 34px;
+}
+.menu-item .menu-submenu .menu-item > .menu-link .menu-bullet {
+    flex: 0 0 20px;
+}

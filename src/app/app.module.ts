@@ -1,13 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './base-layout/body/body.component';
 import { HeaderComponent } from './base-layout/header/header.component';
 import { FooterComponent } from './base-layout/footer/footer.component';
-import { AddRestaurantComponent } from './pages/restaurant/add-restaurant/add-restaurant.component';
-import { RestaurantListComponent } from './pages/restaurant/restaurant-list/restaurant-list.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SidebarComponent } from './base-layout/sidebar/sidebar.component';
@@ -16,27 +13,39 @@ import { QuickActionComponent } from './base-layout/quick-action/quick-action.co
 import { QuickPanelComponent } from './base-layout/quick-panel/quick-panel.component';
 import { QuickUserComponent } from './base-layout/quick-user/quick-user.component';
 
+import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choose-restaurant.component';
+import { SetupComponent } from './pages/setup/setup.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { NameAddressComponent } from './pages/setup/restaurant-basics/name-address/name-address.component';
+import { SetupModule } from './pages/setup/setup.module';
+import { OwnerPersonalInformationComponent } from './pages/setup/restaurant-basics/owner-personal-information/owner-personal-information.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
     HeaderComponent,
     FooterComponent,
-    AddRestaurantComponent,
-    RestaurantListComponent,
     DashboardComponent,
     LoginComponent,
     SidebarComponent,
     MobileHeaderComponent,
     QuickActionComponent,
     QuickPanelComponent,
-    QuickUserComponent
+    QuickUserComponent,
+    NameAddressComponent,
+    ChooseRestaurantComponent,
+    SetupComponent,
+    OwnerPersonalInformationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ { provide: LocationStrategy, useClass:HashLocationStrategy },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
