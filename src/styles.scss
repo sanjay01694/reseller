@@ -30,6 +30,9 @@ app-root, app-login, #kt_login, app-body, #kt_wrapper, .page{
 .aside .aside-primary{
     border-right: 1px solid #EBEDF3
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-decoration-underline{
+    text-decoration: underline;
+}
+#hidden_hours{
+    display: none;
+}
