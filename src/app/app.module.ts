@@ -20,6 +20,7 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
 import { NameAddressComponent } from './pages/setup/restaurant-basics/name-address/name-address.component';
 import { SetupModule } from './pages/setup/setup.module';
 import { OwnerPersonalInformationComponent } from './pages/setup/restaurant-basics/owner-personal-information/owner-personal-information.component';
+import { RestaurantListComponent } from './restaurants/restaurant-list/restaurant-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { OwnerPersonalInformationComponent } from './pages/setup/restaurant-basi
     NameAddressComponent,
     ChooseRestaurantComponent,
     SetupComponent,
-    OwnerPersonalInformationComponent
+    OwnerPersonalInformationComponent,
+    RestaurantListComponent
   ],
   imports: [
     BrowserModule,

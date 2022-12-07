@@ -4,6 +4,12 @@ import { LoginComponent } from './auth/login/login.component';
 import { BodyComponent } from './base-layout/body/body.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choose-restaurant.component';
+import { AlertComponent } from './pages/setup/menu-setup_and_receive-orders/alert/alert.component';
+import { MenuSetupComponent } from './pages/setup/menu-setup_and_receive-orders/menu-setup/menu-setup.component';
+import { ReceiverOrdersComponent } from './pages/setup/menu-setup_and_receive-orders/receiver-orders/receiver-orders.component';
+import { PaymentMethodComponent } from './pages/setup/payment_and_taxes/payment-method/payment-method.component';
+import { ServiceChargesComponent } from './pages/setup/payment_and_taxes/service-charges/service-charges.component';
+import { TaxesComponent } from './pages/setup/payment_and_taxes/taxes/taxes.component';
 import { AccountConfirmationComponent } from './pages/setup/restaurant-basics/account-confirmation/account-confirmation.component';
 import { LocationComponent } from './pages/setup/restaurant-basics/location/location.component';
 import { NameAddressComponent } from './pages/setup/restaurant-basics/name-address/name-address.component';
@@ -16,6 +22,7 @@ import { OpenHoursComponent } from './pages/setup/services_hours/open-hours/open
 import { PickupComponent } from './pages/setup/services_hours/pickup/pickup.component';
 
 import { SetupComponent } from './pages/setup/setup.component';
+import { RestaurantListComponent } from './restaurants/restaurant-list/restaurant-list.component';
 
 const routes: Routes = [
   {
@@ -74,8 +81,36 @@ const routes: Routes = [
           {
             path: 'open_hours',
             component: OpenHoursComponent
+          },
+          {
+            path: 'tax',
+            component: TaxesComponent
+          },
+          {
+            path: 'service_charges',
+            component: ServiceChargesComponent
+          },
+          {
+            path: 'payment_method',
+            component: PaymentMethodComponent
+          },
+          {
+            path: 'receive_orders',
+            component: ReceiverOrdersComponent
+          },
+          {
+            path: 'menu_setup',
+            component: MenuSetupComponent
+          },
+          {
+            path: 'alert',
+            component: AlertComponent
           }
         ]
+      },
+      {
+        path: 'restaurant_list',
+        component: RestaurantListComponent
       }
     ]
     // children: [
@@ -88,7 +123,8 @@ const routes: Routes = [
     //     loadChildren: () => import('./pages/setup/setup.module').then(m => m.SetupModule)
     //   },
     // ]
-  }
+  },
+  
 ];
 
 @NgModule({

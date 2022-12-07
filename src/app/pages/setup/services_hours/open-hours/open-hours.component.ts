@@ -12,6 +12,8 @@ export class OpenHoursComponent implements OnInit {
   ngOnInit(): void {
     js.timePicker();
     js.showHours();
+    js.dateRangePicker();
+    // js.showDifferentHours();
   }
 
 }

@@ -5,8 +5,7 @@
 }
 .custom-radio-btns .button{
     position: relative;
-    display: inline-block;
-    width: 60px;
+    width: 50%;
     height: 40px;
     display: flex;
     align-items: center;
