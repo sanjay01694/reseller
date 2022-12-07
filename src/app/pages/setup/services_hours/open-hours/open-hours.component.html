@@ -113,23 +113,116 @@
                 </div>
                 <h6 class="font-size-sm mb-5"><a href="javascript:void(0);" class="text-warning" id="btn_addhours">Add Hours</a></h6>
                 <div>
-                    <div class="checkbox-inline">
-                        <label class="checkbox checkbox-outline checkbox-outline-2x checkbox-primary">
+                    <div class="checkbox-list">
+                        <label class="checkbox checkbox-outline checkbox-outline-2x checkbox-primary" id="setDifferentHours">
                             <input type="checkbox" name="Checkboxes16"/>
                             <span></span>
                             Set different operating hours for pickup and delivery
                         </label>
+                        <div id="set_different_hidden_hours">
+                            <div class="card card-custom card-border mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <table class="table table-borderless">
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Mon
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Tue
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Wed
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Thu
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Fri
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Sat
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <div class="checkbox-inline">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="Checkboxes2" checked/>
+                                                                <span></span>
+                                                                Sun
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="d-flex align-items-center">
+                                                <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
+                                                <span class="mx-2">-</span>
+                                                <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-success mr-2">Save</button>
+                                            <button class="btn btn-outline-light" id="btn-cancel">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="separator separator-solid my-5"></div>
                 <h5 class="">Exceptions</h5>
                 <div class="d-flex align-items-center">
-                    <a href="javascript:void(0);" class="text-decoration-underline">Add special day / holiday</a>
+                    <a href="javascript:void(0);" class="text-decoration-underline" data-toggle="modal" data-target="#addSpecialDay">Add special day / holiday</a>
                     <span class="mx-2">|</span>
-                    <a href="javascript:void(0);" class="text-decoration-underline">Pause services</a>
+                    <a href="javascript:void(0);" class="text-decoration-underline" data-toggle="modal" data-target="#pauseService">Pause services</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!--End::Choose Restaurant Option-->
+

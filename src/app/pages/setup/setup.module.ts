@@ -11,8 +11,15 @@ import { DeliveryStatusComponent } from './services_hours/delivery/delivery-stat
 import { DeliveryZoneComponent } from './services_hours/delivery/delivery-zone/delivery-zone.component';
 import { DineinComponent } from './services_hours/dinein/dinein.component';
 import { OpenHoursComponent } from './services_hours/open-hours/open-hours.component';
+import { TaxesComponent } from './payment_and_taxes/taxes/taxes.component';
+import { PaymentMethodComponent } from './payment_and_taxes/payment-method/payment-method.component';
+import { ServiceChargesComponent } from './payment_and_taxes/service-charges/service-charges.component';
+import { ReceiverOrdersComponent } from './menu-setup_and_receive-orders/receiver-orders/receiver-orders.component';
+import { MenuSetupComponent } from './menu-setup_and_receive-orders/menu-setup/menu-setup.component';
+import { AlertComponent } from './menu-setup_and_receive-orders/alert/alert.component';
+
 @NgModule({
-  declarations: [LocationComponent, AccountConfirmationComponent, PickupComponent, RestaurantBasicsComponent, DeliveryStatusComponent, DeliveryZoneComponent, DineinComponent, OpenHoursComponent],
+  declarations: [LocationComponent, AccountConfirmationComponent, PickupComponent, RestaurantBasicsComponent, DeliveryStatusComponent, DeliveryZoneComponent, DineinComponent, OpenHoursComponent, TaxesComponent, PaymentMethodComponent, ServiceChargesComponent, ReceiverOrdersComponent, MenuSetupComponent, AlertComponent],
   imports: [
     CommonModule,
     SetupRoutingModule,
