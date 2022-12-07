@@ -92,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,6 +128,6 @@
   },
   "defaultProject": "reseller",
   "cli": {
-    "analytics": "5fd845eb-322f-4e0c-b493-a85d268204dd"
+    "analytics": "eea0fb35-47ac-4b9e-93ef-2ceefad58cd1"
   }
 }
