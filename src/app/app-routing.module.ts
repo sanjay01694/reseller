@@ -120,6 +120,10 @@ const routes: Routes = [
           {
             path: 'handover',
             component: HandoverOptionsComponent
+          },
+          {
+            path: 'manage_restaurant_schedule',
+            component: ManageScheduleComponent
           }
         ]
       },

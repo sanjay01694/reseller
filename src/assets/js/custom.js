@@ -29,13 +29,13 @@ export var timePicker = function () {
 }
 /*** Show & Hide Hidden Hours */
 export var showHours = function () {
-    $("#btn_addhours").click(function () {
+    $(".btn_addhours").click(function () {
         $("#hidden_hours").show();
-        $("#btn_addhours").hide();
+        $(".btn_addhours").hide();
     });
     $("#btn-cancel").click(function () {
         $("#hidden_hours").hide();
-        $("#btn_addhours").show();
+        $(".btn_addhours").show();
     });
 }
 /*** Show & Hide Set Different Hidden Hours */
