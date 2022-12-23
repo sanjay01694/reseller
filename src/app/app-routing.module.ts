@@ -18,6 +18,7 @@ import { RestaurantBasicsComponent } from './pages/setup/restaurant-basics/resta
 import { DeliveryStatusComponent } from './pages/setup/services_hours/delivery/delivery-status/delivery-status.component';
 import { DeliveryZoneComponent } from './pages/setup/services_hours/delivery/delivery-zone/delivery-zone.component';
 import { DineinComponent } from './pages/setup/services_hours/dinein/dinein.component';
+import { ManageScheduleComponent } from './pages/setup/services_hours/manage-schedule/manage-schedule.component';
 import { OpenHoursComponent } from './pages/setup/services_hours/open-hours/open-hours.component';
 import { PickupComponent } from './pages/setup/services_hours/pickup/pickup.component';
 
@@ -105,6 +106,10 @@ const routes: Routes = [
           {
             path: 'alert',
             component: AlertComponent
+          },
+          {
+            path: 'manage_restaurant_schedule',
+            component: ManageScheduleComponent
           }
         ]
       },
