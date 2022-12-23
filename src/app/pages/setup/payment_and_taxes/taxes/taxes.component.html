@@ -2,7 +2,11 @@
 <div class="card card-custom shadow-lg">
     <div class="card-header">
         <div class="card-title">
-            <div class="card-label">Taxation and Currency</div>
+            <div class="d-flex align-items-center">
+                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow" routerLink="/setup/open_hours">Back</a>
+                <div class="card-label">Taxation and Currency</div>
+            </div>
+            
         </div>
         <div class="card-toolbar">
             <a href="javascript:void(0);" class="btn btn-primary" routerLink="/setup/service_charges">Next</a>
@@ -13,7 +17,7 @@
             <div class="form-group">
                 <label for="">Sales Tax:</label>
                 <div class="input-group">
-                    <select class="form-control selectpicker" aria-describedby="basic-addon2">
+                    <select class="form-control" aria-describedby="basic-addon2">
                         <option>Menu prices already include taxes</option>
                         <option value="">Apply tax on top of my menu prices</option>
                     </select>
@@ -23,7 +27,7 @@
             <div class="form-group">
                 <label for="">Currency:</label>
                 <div class="input-group">
-                    <select class="form-control selectpicker" aria-describedby="basic-addon2">
+                    <select class="form-control" aria-describedby="basic-addon2">
                         <option><b class="text-uppercase">AED</b> - UAE Dirham</option>
                         <option value=""><b class="text-uppercase">AFN</b> - Afghani</option>
                     </select>

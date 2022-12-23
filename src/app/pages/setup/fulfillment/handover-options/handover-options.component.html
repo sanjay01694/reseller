@@ -1,0 +1,98 @@
+<!--Begin::Choose Restaurant Option-->
+<div class="card card-custom shadow-lg">
+    <div class="card-header">
+        <div class="card-title">
+            <div class="d-flex align-items-center">
+                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow"
+                    routerLink="/setup/alert">Back</a>
+                <div class="card-label">Fulfillment options</div>
+            </div>
+
+        </div>
+        <div class="card-toolbar">
+            <a href="javascript:void(0);" class="btn btn-primary" routerLink="/setup/tax">Next</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-lg-12 mb-3">
+                <div class="d-flex align-items-center">
+                    <div class="mr-3">
+                        <i class="fas fa-exclamation-triangle text-warning icon-3x"></i>
+                    </div>
+                    <div>As part of a higher hygiene standard or just for the well being of your team and clients please
+                        consider the fulfillment options with minimum physical exposure.</div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="separator separator-solid my-5"></div>
+            </div>
+            <div class="col-lg-12">
+                <div class="radio-list">
+                    <label class="radio radio-outline radio-outline-2x radio-primary" id="fulfillment_radio_1">
+                        <input type="radio" name="Checkboxes16" />
+                        <span></span>
+                        Default (No extra options at checkout)
+                    </label>
+                    <label class="radio radio-outline radio-outline-2x radio-primary" id="fulfillment_radio_2">
+                        <input type="radio" name="Checkboxes16" />
+                        <span></span>
+                        Minimum exposure options at checkout
+                    </label>
+                </div>
+                <div class="mt-5">
+                    <div class="accordion accordion-solid accordion-panel accordion-toggle-arrow" id="accordionExample8">
+                        <div class="card card-custom border">
+                            <div class="card-header" id="headingOne8">
+                                <div class="card-title w-100" data-toggle="collapse" data-target="#collapseOne8">
+                                    <div class="card-label"><b>Pickup</b></div>
+                                </div>
+                            </div>
+                            <div id="collapseOne8" class="collapse show" data-parent="#accordionExample8">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>At the restaurant counter</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>Outside the restaurant</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>Curbside pickup</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-custom border">
+                            <div class="card-header" id="headingTwo8">
+                                <div class="card-title w-100 collapsed" data-toggle="collapse" data-target="#collapseTwo8">
+                                    <div class="card-label">Delivery</div>
+
+                                </div>
+                            </div>
+                            <div id="collapseTwo8" class="collapse" data-parent="#accordionExample8">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>In-person delivery</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>Meet driver outside</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <div>No-contact / Leave order at my door</div>
+                                        <div><input data-switch="true" type="checkbox"  checked="checked"  data-size="small" data-off-color="warning"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End::Choose Restaurant Option-->

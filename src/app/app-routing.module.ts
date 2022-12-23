@@ -4,9 +4,11 @@ import { LoginComponent } from './auth/login/login.component';
 import { BodyComponent } from './base-layout/body/body.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choose-restaurant.component';
+import { HandoverOptionsComponent } from './pages/setup/fulfillment/handover-options/handover-options.component';
 import { AlertComponent } from './pages/setup/menu-setup_and_receive-orders/alert/alert.component';
 import { MenuSetupComponent } from './pages/setup/menu-setup_and_receive-orders/menu-setup/menu-setup.component';
 import { ReceiverOrdersComponent } from './pages/setup/menu-setup_and_receive-orders/receiver-orders/receiver-orders.component';
+import { ActivateOnlinePaymentComponent } from './pages/setup/payment_and_taxes/activate-online-payment/activate-online-payment.component';
 import { PaymentMethodComponent } from './pages/setup/payment_and_taxes/payment-method/payment-method.component';
 import { ServiceChargesComponent } from './pages/setup/payment_and_taxes/service-charges/service-charges.component';
 import { TaxesComponent } from './pages/setup/payment_and_taxes/taxes/taxes.component';
@@ -18,6 +20,7 @@ import { RestaurantBasicsComponent } from './pages/setup/restaurant-basics/resta
 import { DeliveryStatusComponent } from './pages/setup/services_hours/delivery/delivery-status/delivery-status.component';
 import { DeliveryZoneComponent } from './pages/setup/services_hours/delivery/delivery-zone/delivery-zone.component';
 import { DineinComponent } from './pages/setup/services_hours/dinein/dinein.component';
+import { ManageScheduleComponent } from './pages/setup/services_hours/manage-schedule/manage-schedule.component';
 import { OpenHoursComponent } from './pages/setup/services_hours/open-hours/open-hours.component';
 import { PickupComponent } from './pages/setup/services_hours/pickup/pickup.component';
 
@@ -83,6 +86,10 @@ const routes: Routes = [
             component: OpenHoursComponent
           },
           {
+            path: 'manage_scheduled',
+            component: ManageScheduleComponent
+          },
+          {
             path: 'tax',
             component: TaxesComponent
           },
@@ -95,6 +102,10 @@ const routes: Routes = [
             component: PaymentMethodComponent
           },
           {
+            path: 'activate_online_payment',
+            component: ActivateOnlinePaymentComponent
+          },
+          {
             path: 'receive_orders',
             component: ReceiverOrdersComponent
           },
@@ -105,6 +116,10 @@ const routes: Routes = [
           {
             path: 'alert',
             component: AlertComponent
+          },
+          {
+            path: 'handover',
+            component: HandoverOptionsComponent
           }
         ]
       },
