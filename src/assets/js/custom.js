@@ -29,13 +29,13 @@ export var timePicker = function () {
 }
 /*** Show & Hide Hidden Hours */
 export var showHours = function () {
-    $("#btn_addhours").click(function () {
+    $(".btn_addhours").click(function () {
         $("#hidden_hours").show();
-        $("#btn_addhours").hide();
+        $(".btn_addhours").hide();
     });
     $("#btn-cancel").click(function () {
         $("#hidden_hours").hide();
-        $("#btn_addhours").show();
+        $(".btn_addhours").show();
     });
 }
 /*** Show & Hide Set Different Hidden Hours */
@@ -138,4 +138,25 @@ export var FileUpload = function () {
     KTUtil.ready(function () {
         KTDropzoneDemo.init();
     });
+}
+export var switchToggle = function(){
+    var KTBootstrapSwitch = function() {
+
+        // Private functions
+        var demos = function() {
+         // minimum setup
+         $('[data-switch=true]').bootstrapSwitch();
+        };
+        
+        return {
+         // public functions
+         init: function() {
+         demos();
+         },
+        };
+        }();
+        
+        jQuery(document).ready(function() {
+        KTBootstrapSwitch.init();
+        });
 }

@@ -1,9 +1,11 @@
-.custom-radio-btns{
+.custom-radio-btns,
+.custom-checkbox-btns{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.custom-radio-btns .button{
+.custom-radio-btns .button,
+.custom-checkbox-btns .button{
     position: relative;
     width: 50%;
     height: 40px;
@@ -13,7 +15,9 @@
     margin: 0 3px;
 }
 .custom-radio-btns .button label,
-.custom-radio-btns .button input{
+.custom-radio-btns .button input,
+.custom-checkbox-btns .button label,
+.custom-checkbox-btns .button input{
     display: block;
     position: absolute;
     top: 0;
@@ -28,18 +32,22 @@
     border-radius: 0.42rem;
     cursor: pointer;
 }
-.custom-radio-btns .button input[type="radio"] {
+.custom-radio-btns .button input[type="radio"],
+.custom-checkbox-btns .button input[type="checkbox"] {
     opacity: 0.011;
     z-index: 100;
 }
-.custom-radio-btns .button input[type="radio"]:checked + label {
+.custom-radio-btns .button input[type="radio"]:checked + label,
+.custom-checkbox-btns .button input[type="checkbox"]:checked + label {
     color: #fff;
 }
-.custom-radio-btns .button input#no[type="radio"]:checked + label{
+.custom-radio-btns .button input#no[type="radio"]:checked + label,
+.custom-checkbox-btns .button input#no[type="checkbox"]:checked + label{
     background: #F64E60;
     border-color: #F64E60;
 }
-.custom-radio-btns .button input#yes[type="radio"]:checked + label{
+.custom-radio-btns .button input#yes[type="radio"]:checked + label,
+.custom-checkbox-btns .button input#yes[type="checkbox"]:checked + label{
     background: #1BC5BD;
     border-color: #1BC5BD;
 }
