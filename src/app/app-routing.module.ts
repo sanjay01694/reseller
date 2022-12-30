@@ -7,6 +7,7 @@ import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choos
 import { HandoverOptionsComponent } from './pages/setup/fulfillment/handover-options/handover-options.component';
 import { AlertComponent } from './pages/setup/menu-setup_and_receive-orders/alert/alert.component';
 import { MenuSetupComponent } from './pages/setup/menu-setup_and_receive-orders/menu-setup/menu-setup.component';
+import { ReceiveOrderOptionsComponent } from './pages/setup/menu-setup_and_receive-orders/receiver-orders/receive-order-options/receive-order-options.component';
 import { ReceiverOrdersComponent } from './pages/setup/menu-setup_and_receive-orders/receiver-orders/receiver-orders.component';
 import { ActivateOnlinePaymentComponent } from './pages/setup/payment_and_taxes/activate-online-payment/activate-online-payment.component';
 import { PaymentMethodComponent } from './pages/setup/payment_and_taxes/payment-method/payment-method.component';
@@ -108,6 +109,10 @@ const routes: Routes = [
           {
             path: 'receive_orders',
             component: ReceiverOrdersComponent
+          },
+          {
+            path: 'receive_orders/receive_orders_options',
+            component: ReceiveOrderOptionsComponent
           },
           {
             path: 'menu_setup',
