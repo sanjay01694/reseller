@@ -20,7 +20,14 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
 import { NameAddressComponent } from './pages/setup/restaurant-basics/name-address/name-address.component';
 import { SetupModule } from './pages/setup/setup.module';
 import { OwnerPersonalInformationComponent } from './pages/setup/restaurant-basics/owner-personal-information/owner-personal-information.component';
-import { RestaurantListComponent } from './restaurants/restaurant-list/restaurant-list.component';
+import { RestaurantListComponent } from './pages/restaurants/restaurant-list/restaurant-list.component';
+import { RestaurantReportsComponent } from './pages/restaurants/restaurant-list/restaurant-reports/restaurant-reports.component';
+import { DeliveryIntegrationComponent } from './pages/activate_more_services/delivery-integration/delivery-integration.component';
+import { PosIntegrationComponent } from './pages/activate_more_services/pos-integration/pos-integration.component';
+import { FiveStarReviewsComponent } from './pages/activate_more_services/five-star-reviews/five-star-reviews.component';
+import { NewWebsitesComponent } from './pages/activate_more_services/new-websites/new-websites.component';
+import { NewMobileAppsComponent } from './pages/activate_more_services/new-mobile-apps/new-mobile-apps.component';
+import { EmailMarketingComponent } from './pages/activate_more_services/email-marketing/email-marketing.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +46,14 @@ import { RestaurantListComponent } from './restaurants/restaurant-list/restauran
     ChooseRestaurantComponent,
     SetupComponent,
     OwnerPersonalInformationComponent,
-    RestaurantListComponent
+    RestaurantListComponent,
+    RestaurantReportsComponent,
+    DeliveryIntegrationComponent,
+    PosIntegrationComponent,
+    FiveStarReviewsComponent,
+    NewWebsitesComponent,
+    NewMobileAppsComponent,
+    EmailMarketingComponent,
   ],
   imports: [
     BrowserModule,
