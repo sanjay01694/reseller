@@ -1,3 +1,6 @@
+#kt_wrapper{
+    padding-top: 25px;
+}
 .custom-radio-btns,
 .custom-checkbox-btns{
     display: flex;

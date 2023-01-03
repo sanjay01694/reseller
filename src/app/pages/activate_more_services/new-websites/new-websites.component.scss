@@ -1,0 +1,38 @@
+.screen {
+	display: block;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #b3b3b3;
+	border-radius: 1px;
+	margin: 0 auto;
+}
+.screen img {
+	bottom: -395px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+  margin:0;
+  padding:0;
+	-webkit-transition: top 3s ease-in-out;
+	-moz-transition: top 3s ease-in-out;
+	-ms-transition: top 3s ease-in-out;
+	-o-transition: top 3s ease-in-out;
+	transition: bottom 3s ease-in-out;
+}
+.screen1 img{
+    bottom: -447px;
+}
+.screen2 img{
+    bottom: -659px;
+}
+.screen:hover img {
+  bottom: 0;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}

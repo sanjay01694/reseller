@@ -2,7 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { BodyComponent } from './base-layout/body/body.component';
+import { DeliveryIntegrationComponent } from './pages/activate_more_services/delivery-integration/delivery-integration.component';
+import { EmailMarketingComponent } from './pages/activate_more_services/email-marketing/email-marketing.component';
+import { FiveStarReviewsComponent } from './pages/activate_more_services/five-star-reviews/five-star-reviews.component';
+import { NewMobileAppsComponent } from './pages/activate_more_services/new-mobile-apps/new-mobile-apps.component';
+import { NewWebsitesComponent } from './pages/activate_more_services/new-websites/new-websites.component';
+import { PosIntegrationComponent } from './pages/activate_more_services/pos-integration/pos-integration.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { RestaurantListComponent } from './pages/restaurants/restaurant-list/restaurant-list.component';
+import { RestaurantReportsComponent } from './pages/restaurants/restaurant-list/restaurant-reports/restaurant-reports.component';
 import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choose-restaurant.component';
 import { HandoverOptionsComponent } from './pages/setup/fulfillment/handover-options/handover-options.component';
 import { AlertComponent } from './pages/setup/menu-setup_and_receive-orders/alert/alert.component';
@@ -26,7 +34,6 @@ import { OpenHoursComponent } from './pages/setup/services_hours/open-hours/open
 import { PickupComponent } from './pages/setup/services_hours/pickup/pickup.component';
 
 import { SetupComponent } from './pages/setup/setup.component';
-import { RestaurantListComponent } from './restaurants/restaurant-list/restaurant-list.component';
 
 const routes: Routes = [
   {
@@ -132,10 +139,6 @@ const routes: Routes = [
           }
         ]
       },
-      {
-        path: 'restaurant_list',
-        component: RestaurantListComponent
-      }
     ]
     // children: [
     //   // {
@@ -148,7 +151,50 @@ const routes: Routes = [
     //   },
     // ]
   },
-  
+  {
+    path: 'restaurants',
+    component: BodyComponent,
+    children: [
+      {
+        path: '',
+        component: RestaurantListComponent
+      },
+      {
+        path: 'restaurant_reports',
+        component: RestaurantReportsComponent
+      },
+    ]
+  },
+  {
+    path: 'activate_more_services',
+    component: BodyComponent,
+    children: [
+      {
+        path: '',
+        component: DeliveryIntegrationComponent
+      },
+      {
+        path: 'pos_integration',
+        component: PosIntegrationComponent
+      },
+      {
+        path: 'five_star_reviews',
+        component: FiveStarReviewsComponent
+      },
+      {
+        path: 'new_websites',
+        component: NewWebsitesComponent
+      },
+      {
+        path: 'new_mobile_apps',
+        component: NewMobileAppsComponent
+      },
+      {
+        path: 'email_marketing',
+        component: EmailMarketingComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({
