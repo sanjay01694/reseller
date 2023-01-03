@@ -20,9 +20,10 @@ import { AlertComponent } from './menu-setup_and_receive-orders/alert/alert.comp
 import { ActivateOnlinePaymentComponent } from './payment_and_taxes/activate-online-payment/activate-online-payment.component';
 import { HandoverOptionsComponent } from './fulfillment/handover-options/handover-options.component';
 import { ManageScheduleComponent } from './services_hours/manage-schedule/manage-schedule.component';
+import { ReceiveOrderOptionsComponent } from './menu-setup_and_receive-orders/receiver-orders/receive-order-options/receive-order-options.component';
 
 @NgModule({
-  declarations: [LocationComponent, AccountConfirmationComponent, PickupComponent, RestaurantBasicsComponent, DeliveryStatusComponent, DeliveryZoneComponent, DineinComponent, OpenHoursComponent, TaxesComponent, PaymentMethodComponent, ServiceChargesComponent, ReceiverOrdersComponent, MenuSetupComponent, AlertComponent, ActivateOnlinePaymentComponent, HandoverOptionsComponent, ManageScheduleComponent],
+  declarations: [LocationComponent, AccountConfirmationComponent, PickupComponent, RestaurantBasicsComponent, DeliveryStatusComponent, DeliveryZoneComponent, DineinComponent, OpenHoursComponent, TaxesComponent, PaymentMethodComponent, ServiceChargesComponent, ReceiverOrdersComponent, MenuSetupComponent, AlertComponent, ActivateOnlinePaymentComponent, HandoverOptionsComponent, ManageScheduleComponent, ReceiveOrderOptionsComponent],
   imports: [
     CommonModule,
     SetupRoutingModule,

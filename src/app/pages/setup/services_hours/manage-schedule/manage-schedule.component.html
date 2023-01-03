@@ -3,10 +3,11 @@
     <div class="card-header">
         <div class="card-title">
             <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow" routerLink="/setup/open_hours">Back</a>
+                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow"
+                    routerLink="/setup/open_hours">Back</a>
                 <div class="card-label">Manage Schedule</div>
             </div>
-            
+
         </div>
         <div class="card-toolbar">
             <a href="javascript:void(0);" class="btn btn-primary" routerLink="/setup/tax">Next</a>
@@ -15,20 +16,24 @@
     <div class="card-body">
         <div class="row align-items-center">
             <div class="col-lg-12">
-                <div class=" mb-4">
-                    <h5 class="m-0">Opening hours</h5>
+                <div class="mb-5">
+                    <div class="font-size-lg font-weight-bolder bg-light p-3 mb-3">Schedule 1 (For restaurants who do not have a split schedule enter your open time and close
+                        time)</div>
+                    <div class=" mb-4">
+                        <h5 class="m-0">Opening hours</h5>
                         <table class="table table-borderless">
                             <tr>
                                 <td class="px-0">Monday-Sunday:</td>
                                 <td class="text-right px-0">
                                     10:00 AM - 08:00 PM
-                                    <a href="javascript:void(0);" class="ml-2 btn_addhours"><i class="la la-pen"></i></a>
+                                    <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                            class="la la-pen"></i></a>
                                 </td>
                             </tr>
                         </table>
-                </div>
-                <div class="">
-                    <h5 class="m-0">Delivery hours</h5>
+                    </div>
+                    <div class="">
+                        <h5 class="m-0">Delivery hours</h5>
                         <table class="table table-borderless">
                             <tr>
                                 <td class="px-0">Monday-Sunday:</td>
@@ -37,7 +42,8 @@
                                         <div>First Order - First Delivery</div>
                                         <div>
                                             10:00 AM - 08:00 PM
-                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i class="la la-pen"></i></a>
+                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                                    class="la la-pen"></i></a>
                                         </div>
                                     </div>
                                 </td>
@@ -46,12 +52,59 @@
                                         <div>Last Order - Last Delivery</div>
                                         <div>
                                             10:00 AM - 08:00 PM
-                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i class="la la-pen"></i></a>
+                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                                    class="la la-pen"></i></a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <div class="font-size-lg font-weight-bolder bg-light p-3 mb-3">Schedule 2 (For restaurants who do not have a split schedule enter your open time and close
+                        time)</div>
+                    <div class="mb-4">
+                        <h5 class="m-0">Opening hours</h5>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td class="px-0">Monday-Sunday:</td>
+                                <td class="text-right px-0">
+                                    10:00 AM - 08:00 PM
+                                    <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                            class="la la-pen"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="">
+                        <h5 class="m-0">Delivery hours</h5>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td class="px-0">Monday-Sunday:</td>
+                                <td class="text-right px-0">
+                                    <div class="text-left">
+                                        <div>First Order - First Delivery</div>
+                                        <div>
+                                            10:00 AM - 08:00 PM
+                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                                    class="la la-pen"></i></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-right px-0">
+                                    <div class="text-right">
+                                        <div>Last Order - Last Delivery</div>
+                                        <div>
+                                            10:00 AM - 08:00 PM
+                                            <a href="javascript:void(0);" class="ml-2 btn_addhours"><i
+                                                    class="la la-pen"></i></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="card card-custom card-border mb-3" id="hidden_hours">
                     <div class="card-body p-3">
@@ -62,7 +115,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Mon
                                                 </label>
@@ -71,7 +124,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Tue
                                                 </label>
@@ -80,7 +133,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Wed
                                                 </label>
@@ -91,7 +144,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Thu
                                                 </label>
@@ -100,7 +153,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Fri
                                                 </label>
@@ -109,7 +162,7 @@
                                         <td>
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Sat
                                                 </label>
@@ -120,7 +173,7 @@
                                         <td colspan="3">
                                             <div class="checkbox-inline">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="Checkboxes2" checked/>
+                                                    <input type="checkbox" name="Checkboxes2" checked />
                                                     <span></span>
                                                     Sun
                                                 </label>
@@ -130,10 +183,21 @@
                                 </table>
                             </div>
                             <div class="col-lg-5">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mb-5">
                                     <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
                                     <span class="mx-2">-</span>
                                     <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
+                                </div>
+                                <div class="d-flex align-items-center row">
+                                    <div class="col-8">
+                                        <label for="">Min. order amount</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="">Min. Delay</label>
+                                        <input type="text" name="" id="" class="form-control kt_timepicker_1"
+                                            placeholder="">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -143,118 +207,8 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="font-size-sm mb-5"><a href="javascript:void(0);" class="text-warning btn_addhours">Add Hours</a></h6>
-                <div>
-                    <div class="checkbox-list">
-                        <label class="checkbox checkbox-outline checkbox-outline-2x checkbox-primary" id="setDifferentHours">
-                            <input type="checkbox" name="Checkboxes16"/>
-                            <span></span>
-                            Set different operating hours for pickup and delivery
-                        </label>
-                        <div id="set_different_hidden_hours">
-                            <div class="card card-custom card-border mb-3">
-                                <div class="card-body p-3">
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <table class="table table-borderless">
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Mon
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Tue
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Wed
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Thu
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Fri
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Sat
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3">
-                                                        <div class="checkbox-inline">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="Checkboxes2" checked/>
-                                                                <span></span>
-                                                                Sun
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="d-flex align-items-center">
-                                                <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
-                                                <span class="mx-2">-</span>
-                                                <input type="text" name="" id="" class="form-control max-w-100px kt_timepicker_1">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-success mr-2">Save</button>
-                                            <button class="btn btn-outline-light" id="btn-cancel">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="separator separator-solid my-5"></div>
-                <h5 class="">Exceptions</h5>
-                <div class="d-flex align-items-center">
-                    <a href="javascript:void(0);" class="text-decoration-underline" data-toggle="modal" data-target="#addSpecialDay">Add special day / holiday</a>
-                    <span class="mx-2">|</span>
-                    <a href="javascript:void(0);" class="text-decoration-underline" data-toggle="modal" data-target="#pauseService">Pause services</a>
-                </div>
             </div>
         </div>
     </div>
 </div>
 <!--End::Choose Restaurant Option-->
-
