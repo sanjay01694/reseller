@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as js from '../../../../../assets/js/custom';
 @Component({
   selector: 'app-dinein',
   templateUrl: './dinein.component.html',
@@ -10,6 +10,7 @@ export class DineinComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    js.popOver();
   }
 
 }
