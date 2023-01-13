@@ -3,10 +3,11 @@
     <div class="card-header">
         <div class="card-title">
             <div class="d-flex align-items-center">
-                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow" routerLink="/setup/delivery_zone">Back</a>
+                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm mr-3 back-arrow"
+                    routerLink="/setup/delivery_zone">Back</a>
                 <div class="card-label">Dine-in</div>
             </div>
-            
+
         </div>
         <div class="card-toolbar">
             <a href="javascript:void(0);" class="btn btn-primary" routerLink="/setup/curbside">Next</a>
@@ -20,7 +21,7 @@
             <div class="col-lg-4 text-right">
                 <div class="custom-radio-btns">
                     <div class="button">
-                        <input type="radio" id="yes" name="check-substitution-2" checked/>
+                        <input type="radio" id="yes" name="check-substitution-2" checked />
                         <label class="btn btn-outline-secondary" for="a50">Yes</label>
                     </div>
                     <div class="button">
@@ -30,17 +31,31 @@
                 </div>
             </div>
             <div class="col-12 mt-4">
-                <a href="javascript:void(0);" data-toggle="popover" data-html="true" data-placement="top" data-container="body" class="text-decoration-underline">How it works for your clients?</a>
-                <div id="popover-content" class="d-none">
-                    <form class="form-inline" role="form">
-                      <div class="form-group"> 
-                        <input class="headerSearch search-query" id="str" name="str" type="text" placeholder="Search..." />
-                        <span class="glyphicon glyphicon-search" style="margin:3px 8px 0 -20px;"></span>
-                        <input class="btn btn-primary btn-xs" id="phSearchButton" type="submit" value="Search" /> 
-                        <input class="btn btn-primary btn-xs" id="searchButton" type="submit" value="Dictionary" />
-                      </div>
-                    </form>
-                  </div>
+                <popover-content #myPopover 
+                                placement="auto"
+                                [animation]="true" 
+                                [closeOnClickOutside]="true" >
+                    <p>Allow client to order food and drinks when they are in your location. You will have to print the QR codes and put them on each table for the clients to scan.</p>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <div class="mb-3"><img src="assets/media/003-qr-code-scan-1.png" alt=""></div>
+                            <div>Open the camera in your phone</div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="mb-3"><img src="assets/media/001-qr-code-scan.png" alt=""></div>
+                            <div>Aim it at the QR code</div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="mb-3"><img src="assets/media/002-app.png" alt=""></div>
+                            <div>Add item to cart and place order</div>
+                        </div>
+                    </div>
+                </popover-content>
+                <a href="javascript:void(0);"  
+                    class="text-decoration-underline"
+                    [popover]="myPopover"
+                >How it works for your clients?</a>
+                
             </div>
         </div>
     </div>

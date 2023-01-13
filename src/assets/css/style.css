@@ -58,4 +58,59 @@
     cursor: pointer;
     z-index: 90;
     line-height: 1.8em;
-  }
+}
+.scroll.scroll-pull{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#kt_aside .nav,
+.aside .aside-secondary .aside-workspace{
+    width: 100%;
+}
+.aside-secondary-enabled .aside {
+    width: 425px;
+}
+.aside-secondary-enabled.aside-fixed .wrapper {
+    padding-left: 425px;
+}
+.aside .aside-primary{
+    width: 130px;
+}
+.aside-secondary-enabled .aside .aside-primary{
+    background-color: #1e1e2d;
+}
+.btn.btn-icon.btn-lg{
+    width: 100%;
+    padding: 15px 5px;
+    height: auto;
+}
+.btn.btn-clean:not(:disabled):not(.disabled).active,
+.btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled){
+    background-color: #1b1b28;
+    
+}
+.btn.btn-clean .svg-icon svg g [fill]{
+    fill: #494b74;
+}
+.btn.btn-clean:not(:disabled):not(.disabled).active .svg-icon svg g [fill],
+.btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) .svg-icon svg g [fill]{
+    fill: #009ef7;
+}
+.btn.btn-clean:not(:disabled):not(.disabled).active .font-menu-title,
+.btn.btn-clean:hover:not(:disabled):not(.disabled) .font-menu-title{
+    color: #fff;
+}
+.btn.btn-clean .font-menu-title{
+    font-size: 12px;
+    font-weight: 500;
+    color: #9899ac;
+    margin-top: 5px;
+}
+.btn.btn-lg .svg-icon svg, .btn-group-lg > .btn .svg-icon svg {
+    height: 30px !important;
+    width: 30px !important;
+}
+.popover{
+    max-width: 400px !important;
+}
