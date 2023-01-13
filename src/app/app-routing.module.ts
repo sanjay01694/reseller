@@ -12,6 +12,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RestaurantListComponent } from './pages/restaurants/restaurant-list/restaurant-list.component';
 import { RestaurantReportsComponent } from './pages/restaurants/restaurant-list/restaurant-reports/restaurant-reports.component';
 import { ChooseRestaurantComponent } from './pages/setup/choose-restaurant/choose-restaurant.component';
+import { ConfirmationComponent } from './pages/setup/confirmation/confirmation.component';
 import { HandoverOptionsComponent } from './pages/setup/fulfillment/handover-options/handover-options.component';
 import { AlertComponent } from './pages/setup/menu-setup_and_receive-orders/alert/alert.component';
 import { MenuSetupComponent } from './pages/setup/menu-setup_and_receive-orders/menu-setup/menu-setup.component';
@@ -26,6 +27,7 @@ import { LocationComponent } from './pages/setup/restaurant-basics/location/loca
 import { NameAddressComponent } from './pages/setup/restaurant-basics/name-address/name-address.component';
 import { OwnerPersonalInformationComponent } from './pages/setup/restaurant-basics/owner-personal-information/owner-personal-information.component';
 import { RestaurantBasicsComponent } from './pages/setup/restaurant-basics/restaurant-basics.component';
+import { CurbsideComponent } from './pages/setup/services_hours/curbside/curbside.component';
 import { DeliveryStatusComponent } from './pages/setup/services_hours/delivery/delivery-status/delivery-status.component';
 import { DeliveryZoneComponent } from './pages/setup/services_hours/delivery/delivery-zone/delivery-zone.component';
 import { DineinComponent } from './pages/setup/services_hours/dinein/dinein.component';
@@ -34,6 +36,7 @@ import { OpenHoursComponent } from './pages/setup/services_hours/open-hours/open
 import { PickupComponent } from './pages/setup/services_hours/pickup/pickup.component';
 
 import { SetupComponent } from './pages/setup/setup.component';
+import { ContactComponent } from './pages/support/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -90,6 +93,10 @@ const routes: Routes = [
             component: DineinComponent
           },
           {
+            path: 'curbside',
+            component: CurbsideComponent
+          },
+          {
             path: 'open_hours',
             component: OpenHoursComponent
           },
@@ -136,7 +143,11 @@ const routes: Routes = [
           {
             path: 'manage_restaurant_schedule',
             component: ManageScheduleComponent
-          }
+          },
+          {
+            path: 'confirmation',
+            component: ConfirmationComponent
+          },
         ]
       },
     ]
@@ -192,6 +203,16 @@ const routes: Routes = [
       {
         path: 'email_marketing',
         component: EmailMarketingComponent
+      }
+    ]
+  },
+  {
+    path: 'support',
+    component: BodyComponent,
+    children:[
+      {
+        path: 'contact',
+        component: ContactComponent
       }
     ]
   }

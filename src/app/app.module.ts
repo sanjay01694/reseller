@@ -28,6 +28,7 @@ import { FiveStarReviewsComponent } from './pages/activate_more_services/five-st
 import { NewWebsitesComponent } from './pages/activate_more_services/new-websites/new-websites.component';
 import { NewMobileAppsComponent } from './pages/activate_more_services/new-mobile-apps/new-mobile-apps.component';
 import { EmailMarketingComponent } from './pages/activate_more_services/email-marketing/email-marketing.component';
+import { ContactComponent } from './pages/support/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { EmailMarketingComponent } from './pages/activate_more_services/email-ma
     NewWebsitesComponent,
     NewMobileAppsComponent,
     EmailMarketingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

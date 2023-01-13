@@ -23,12 +23,14 @@ import { ManageScheduleComponent } from './services_hours/manage-schedule/manage
 import { ReceiveOrderOptionsComponent } from './menu-setup_and_receive-orders/receiver-orders/receive-order-options/receive-order-options.component';
 import { CurbsideComponent } from './services_hours/curbside/curbside.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { PopoverModule } from 'ngx-smart-popover';
 
 @NgModule({
   declarations: [LocationComponent, AccountConfirmationComponent, PickupComponent, RestaurantBasicsComponent, DeliveryStatusComponent, DeliveryZoneComponent, DineinComponent, OpenHoursComponent, TaxesComponent, PaymentMethodComponent, ServiceChargesComponent, ReceiverOrdersComponent, MenuSetupComponent, AlertComponent, ActivateOnlinePaymentComponent, HandoverOptionsComponent, ManageScheduleComponent, ReceiveOrderOptionsComponent, CurbsideComponent, ConfirmationComponent],
   imports: [
     CommonModule,
     SetupRoutingModule,
+    PopoverModule
   ],
 })
 export class SetupModule { }
