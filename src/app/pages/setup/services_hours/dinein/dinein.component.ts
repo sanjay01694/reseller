@@ -10,7 +10,7 @@ export class DineinComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    js.popOver();
+    // js.popOver();
   }
 
 }
